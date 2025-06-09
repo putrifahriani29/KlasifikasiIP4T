@@ -145,10 +145,10 @@ if submit:
 
     # --------------------- Penjelasan Hasil ---------------------
     deskripsi = {
-        "Akses Reform": "Penataan kembali struktur penguasaan, pemilikan, penggunaan, dan pemanfaatan tanah yang lebih berkeadilan melalui Penataan Aset dan Penataan Akses untuk kemakmuran rakyat(PENATAAN KEMBALI).",
-        "Potensi TORA": "Tanah yang dikuasai oleh negara dan/atau tanah yang telah dimiliki, dikuasai, dan/atau dimanfaatkan oleh masyarakat untuk diredistribusi atau dilegalisasi.",
-        "Sengketa, Konflik dan Perkara": "Perselisihan agraria antara orang perorangan dan/atau kelompok masyarakat dengan badan hukum dan/atau instansi pemerintah yang mempunyai kecenderungan atau berdampak luas secara fisik, sosial, politis, ekonomi, pertahanan atau budaya.",
-        "Legalisasi aset": "Proses pendaftaran tanah untuk pertama kali dan pemeliharaan data tanah yang bertujuan memberikan kepastian hukum atas kepemilikan dan penguasaan tanah kepada masyarakat, khususnya petani dan subjek reforma agraria lainnya."
+        "Akses Reform": "Penataan kembali struktur penguasaan, pemilikan, penggunaan, dan pemanfaatan tanah yang lebih berkeadilan melalui Penataan Aset dan Penataan Akses untuk kemakmuran rakyat(PENATAAN KEMBALI LAHAN).",
+        "Potensi TORA": "Tanah yang dikuasai oleh negara dan/atau tanah yang telah dimiliki, dikuasai, dan/atau dimanfaatkan oleh masyarakat untuk diredistribusi atau dilegalisasi(REDISTRIBUSI LAHAN).",
+        "Sengketa, Konflik dan Perkara": "Perselisihan agraria antara orang perorangan dan/atau kelompok masyarakat dengan badan hukum dan/atau instansi pemerintah yang mempunyai kecenderungan atau berdampak luas secara fisik, sosial, politis, ekonomi, pertahanan atau budaya(LAHAN BERMASALAH).",
+        "Legalisasi aset": "Proses pendaftaran tanah untuk pertama kali dan pemeliharaan data tanah yang bertujuan memberikan kepastian hukum atas kepemilikan dan penguasaan tanah kepada masyarakat, khususnya petani dan subjek reforma agraria lainnya(LEGALITAS LAHAN)."
     }
     penjelasan = deskripsi.get(prediksi, "Tidak ada deskripsi tersedia untuk hasil ini.")
 
