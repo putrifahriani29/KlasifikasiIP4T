@@ -119,49 +119,6 @@ if st.button("📂 Analisis Dataset"):
     else:
         st.info("Tidak ada kolom kategorik ditemukan.")
 
-    # --- Visualisasi Data Numerik (Luas Tanah) ---
-    styled_header("Visualisasi Data Numerik (Luas Tanah)")
-
-    if "Luas  m2" in df.columns:
-        df["Luas  m2"] = pd.to_numeric(df["Luas  m2"], errors="coerce")
-        df_luas = df.dropna(subset=["Luas  m2"])
-
-        if not df_luas.empty:
-            pastel_colors = "#FC00D2"  # Skema warna pastel
-            tabs = st.tabs(["Violin Plot", "Boxplot", "Histogram"])
-
-            with tabs[0]:
-                fig_violin = px.violin(
-                    df_luas, 
-                    y="Luas  m2", 
-                    box=True, 
-                    points="all", 
-                    color_discrete_sequence=[pastel_colors]
-                )
-                st.plotly_chart(fig_violin, use_container_width=True)
-
-            with tabs[1]:
-                fig_box = px.box(
-                    df_luas, 
-                    y="Luas  m2", 
-                    color_discrete_sequence=[pastel_colors]
-                )
-                st.plotly_chart(fig_box, use_container_width=True)
-
-            with tabs[2]:
-                hist_fig = go.Figure()
-                hist_fig.add_trace(go.Histogram(
-                    x=df_luas["Luas  m2"],
-                    nbinsx=30,
-                    histnorm='density',
-                    marker_color=pastel_colors  # Ambil warna pertama dari skema pastel
-                ))
-                st.plotly_chart(hist_fig, use_container_width=True)
-        else:
-            st.warning("Data Luas Tanah kosong atau tidak valid.")
-    else:
-        st.warning("Kolom 'Luas  m2' tidak ditemukan.")
-
 
     styled_header("Visualisasi TARGET")
     col1, col2 = st.columns(2)
